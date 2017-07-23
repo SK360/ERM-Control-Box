@@ -3,7 +3,7 @@ Code for Arduino to Start/Stop Escape Room Master
 
 See attached diagram image for wiring example. The LED's would need to run through a resistor if connecting directly.  I am running my wires to trigger a relay board since I am using large 12v LED's 
 
-Instead of a win button I am using a sensor on the final prop to send ground to the win pin to auto complete the room when the group finds the correct item.  Could easily be tied to a keypad or exit button as well.  This is why I had to add the Bounce library to debounce the input due to some false positives we were getting.
+Instead of a win button I am using a sensor on the final prop to send ground to the win pin to auto complete the room when the group finds the correct item.  Could easily be tied to a keypad or exit button as well.  This is why I had to add the Bounce library to debounce the input due to some false positives we were getting.  In my usecase I also have it monitor the status of the final prop, if it is not in place and is still receiving ground on the Win Pin, it will not illuminate the ready LED.  This won't be an issue if just using a win button.
 
 See my ERM settings screenshot for how I have this setup in ERM Automation
 
