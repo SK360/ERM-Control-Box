@@ -1,5 +1,7 @@
 # ERM-Control-Box
-Code for Arduino to Start/Stop Escape Room Master
+Code for Arduino Uno R3 with Ethernet Shield to Start/Stop Escape Room Master
+
+Make sure to edit the IP in the code to match your network setup, can also change the MAC to avoid conflicts if you have more than one of these on a single network.
 
 See attached diagram image for wiring example. The LED's would need to run through a resistor if connecting directly.  I am running my wires to trigger a relay board since I am using large 12v LED's 
 
