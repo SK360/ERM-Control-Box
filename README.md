@@ -17,3 +17,5 @@ When time expires in ERM it will call /gamefailed which will blink the RED led c
 When Win button is pressed, "Not Won" on /won will change to "Won" and ERM will complete the room.  Yellow LED Illuminates.  ERM is also setup to call /roomwon on room completion so that pressing complete room from the web page will also illuminate yellow LED.
 
 When game reset is called from ERM, it polls /reset which resets all variables on the prop and should illuminate the Green LED again.
+
+The physical reset button must be held then the start button tapped.  This resets all variables in the Arduino, not the game in ERM.  I have this setup incase the arduino and ERM get out of sync (close ERM before resetting room etc)
