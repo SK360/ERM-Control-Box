@@ -9,3 +9,7 @@ Make sure you add Bounce2 Library to the Arduino Sketch
 https://github.com/thomasfredericks/Bounce2
 
 When the board is powered on it is "ready", the green light will illuminate. ERM will poll /started for "Not Started" to change to "Started" and start the room timer.  Upon room start in ERM it will call /confirmstart which will illuiminate the Red LED to confirm to gamemaster that room has indeed started.
+
+When time expires in ERM it will call /gamefailed which will blink the RED led confirming to gamemaster that the room has run out of time and failed.\
+
+When Win button is pressed, "Not Won" on /won will change to "Won" and ERM will complete the room.  Yellow LED Illuminates.
